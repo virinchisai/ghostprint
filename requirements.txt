@@ -1,0 +1,12 @@
+torch==2.2.2
+torchaudio==2.2.2
+numpy<2
+scipy
+scikit-learn
+matplotlib
+pandas
+tqdm
+soundfile
+praat-parselmouth
+librosa
+speechbrain
