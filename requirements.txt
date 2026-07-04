@@ -8,5 +8,5 @@ pandas
 tqdm
 soundfile
 praat-parselmouth
-librosa
-speechbrain
+speechbrain==1.0.0
+huggingface_hub==0.25.2

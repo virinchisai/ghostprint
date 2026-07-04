@@ -1,0 +1,98 @@
+{
+  "ghostprint": {
+    "clean": {
+      "eer": 19.81,
+      "rank1": 29.79,
+      "tpr_at_1far": 20.83
+    },
+    "pitch_up": {
+      "eer": 21.25,
+      "rank1": 29.79,
+      "tpr_at_1far": 20.21
+    },
+    "pitch_down": {
+      "eer": 21.01,
+      "rank1": 27.5,
+      "tpr_at_1far": 17.92
+    },
+    "gender_up": {
+      "eer": 21.46,
+      "rank1": 29.38,
+      "tpr_at_1far": 20.83
+    },
+    "gender_down": {
+      "eer": 21.23,
+      "rank1": 25.42,
+      "tpr_at_1far": 17.08
+    },
+    "hard": {
+      "eer": 22.91,
+      "rank1": 26.88,
+      "tpr_at_1far": 18.12
+    }
+  },
+  "ecapa": {
+    "clean": {
+      "eer": 0.0,
+      "rank1": 100.0,
+      "tpr_at_1far": 100.0
+    },
+    "pitch_up": {
+      "eer": 0.0,
+      "rank1": 100.0,
+      "tpr_at_1far": 100.0
+    },
+    "pitch_down": {
+      "eer": 0.01,
+      "rank1": 100.0,
+      "tpr_at_1far": 100.0
+    },
+    "gender_up": {
+      "eer": 3.33,
+      "rank1": 83.54,
+      "tpr_at_1far": 88.12
+    },
+    "gender_down": {
+      "eer": 5.25,
+      "rank1": 74.17,
+      "tpr_at_1far": 79.17
+    },
+    "hard": {
+      "eer": 1.22,
+      "rank1": 97.29,
+      "tpr_at_1far": 98.54
+    }
+  },
+  "fusion": {
+    "clean": {
+      "eer": 0.21,
+      "rank1": 100.0,
+      "tpr_at_1far": 100.0
+    },
+    "pitch_up": {
+      "eer": 0.26,
+      "rank1": 100.0,
+      "tpr_at_1far": 100.0
+    },
+    "pitch_down": {
+      "eer": 0.42,
+      "rank1": 99.38,
+      "tpr_at_1far": 100.0
+    },
+    "gender_up": {
+      "eer": 4.54,
+      "rank1": 87.5,
+      "tpr_at_1far": 90.0
+    },
+    "gender_down": {
+      "eer": 5.21,
+      "rank1": 84.17,
+      "tpr_at_1far": 84.58
+    },
+    "hard": {
+      "eer": 2.08,
+      "rank1": 96.25,
+      "tpr_at_1far": 96.88
+    }
+  }
+}

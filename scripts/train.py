@@ -60,8 +60,8 @@ class ProsodySet(Dataset):
         else:
             feats = vars_[0]
         frames = feats["frames"]
-        # light augmentation: random crop to <= 12s, small feature noise
-        max_t = 12 * 50
+        # light augmentation: random crop to <= 8s, small feature noise
+        max_t = 8 * 50
         if frames.shape[0] > max_t:
             s = self.rng.randrange(frames.shape[0] - max_t)
             frames = frames[s:s + max_t]
@@ -100,12 +100,13 @@ def main():
                 n += len(labels)
         sched.step()
         print(f"epoch {epoch+1:02d}/{train_cfg.epochs} "
-              f"loss={tot/nb:.3f} train_acc={correct/n:.3f}")
+              f"loss={tot/nb:.3f} train_acc={correct/n:.3f}", flush=True)
+        torch.save({"encoder": enc.state_dict(),
+                    "speakers": ds.speakers,
+                    "cfg": vars(train_cfg),
+                    "epoch": epoch + 1}, CKPT / "prosody_encoder.pt")
 
-    torch.save({"encoder": enc.state_dict(),
-                "speakers": ds.speakers,
-                "cfg": vars(train_cfg)}, CKPT / "prosody_encoder.pt")
-    print(f"saved {CKPT / 'prosody_encoder.pt'}")
+    print(f"saved {CKPT / 'prosody_encoder.pt'}", flush=True)
 
 
 if __name__ == "__main__":

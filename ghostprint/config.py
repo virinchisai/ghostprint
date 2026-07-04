@@ -29,7 +29,7 @@ class TrainConfig:
     stats_dim: int = 12
     hidden: int = 128
     emb_dim: int = 192
-    epochs: int = 40
+    epochs: int = 15
     batch_size: int = 64
     lr: float = 1e-3
     aam_margin: float = 0.2
@@ -47,7 +47,16 @@ DISGUISE_PRESETS: dict[str, tuple[float, float, float]] = {
     "gender_up":   (+4.0, 1.14, 1.00),
     "gender_down": (-4.0, 0.88, 1.00),
     "hard":        (-2.0, 1.10, 0.94),   # + mild tempo change: stress test
+    # formant dose-response sweep (pitch held ~constant, formants pushed):
+    "fsweep_096":  (-1.0, 0.96, 1.00),
+    "fsweep_088":  (-1.0, 0.88, 1.00),
+    "fsweep_080":  (-1.0, 0.80, 1.00),
+    "fsweep_072":  (-1.0, 0.72, 1.00),
+    "fsweep_065":  (-1.0, 0.65, 1.00),
 }
+
+# formant ratios used by scripts/sweep.py, in order
+SWEEP_PRESETS = ["fsweep_096", "fsweep_088", "fsweep_080", "fsweep_072", "fsweep_065"]
 
 # presets seen during training augmentation (held-out preset tests generalization)
 TRAIN_PRESETS = ["pitch_up", "pitch_down", "gender_up", "gender_down"]
