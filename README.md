@@ -85,7 +85,9 @@ This is the controlled, honest version of the "voiceprint collapses, prosody
 holds" claim: not a single cherry-picked disguise, but a curve that shows
 *where* the crossover happens.
 
-See [`RESULTS.md`](RESULTS.md) for all tables, every figure, and full discussion.
+See [`RESULTS.md`](RESULTS.md) for all tables, every figure, and full discussion,
+and [`PROJECT_GUIDE.md`](PROJECT_GUIDE.md) for a full concept-by-concept walkthrough,
+design rationale, and a technical Q&A.
 <!-- RESULTS_END -->
 
 ## Protocol (mirrors a fraud watchlist)
