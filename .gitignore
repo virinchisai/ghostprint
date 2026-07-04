@@ -4,3 +4,8 @@ work/
 __pycache__/
 *.pyc
 .DS_Store
+
+# generated / local-only artifacts (kept out of the repo)
+GhostPrint_Project_Guide.docx
+GhostPrint_Project_Guide.pdf
+.pytest_cache/

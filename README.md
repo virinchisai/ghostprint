@@ -1,5 +1,7 @@
 # GhostPrint — clone-resistant repeat-fraudster re-identification
 
+[![CI](https://github.com/virinchisai/ghostprint/actions/workflows/ci.yml/badge.svg)](https://github.com/virinchisai/ghostprint/actions/workflows/ci.yml)
+
 **Problem.** Contact-center fraud teams maintain *voice watchlists*: when a known
 fraudster calls again, their voiceprint should match the file. That defense
 quietly breaks the moment the fraudster puts a voice changer or a neural voice
