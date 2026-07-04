@@ -58,7 +58,8 @@ rate at a 1% false-alarm budget, higher better).
 | gender_down | 79.2 | 17.1 | **84.6** |
 | hard | 98.5 | 18.1 | 96.9 |
 
-**Figure:** `results/eer_by_condition.png`, `results/tpr_by_condition.png`
+![EER by disguise condition](results/eer_by_condition.png)
+![Watchlist hit-rate by disguise condition](results/tpr_by_condition.png)
 
 **How to read Table 1.**
 - **GhostPrint is disguise-invariant.** Every GhostPrint column is nearly
@@ -92,7 +93,7 @@ neural voice conversion restructures most — from 1.0 (undisguised) to 0.65
 | **0.72** | **15.8** | **27.9** | **31.0** | **20.4** |
 | **0.65** | **13.3** | **27.5** | **36.2** | **20.3** |
 
-**Figure:** `results/formant_sweep.png`
+![Formant dose-response curve](results/formant_sweep.png)
 
 **How to read Table 2.**
 - **ECAPA degrades monotonically** as formants are pushed: 100 → 87 → 42 → 16 →

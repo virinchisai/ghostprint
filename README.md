@@ -60,8 +60,11 @@ from interaction patterns alone, no audio.
    distortion takes away.
 
 **Formant dose-response — the headline result**
-([`results/formant_sweep.png`](results/formant_sweep.png)): sweeping formant
-scaling from 1.0 (undisguised) → 0.65 (extreme), holding pitch roughly constant.
+
+![Formant dose-response: voiceprint collapses under formant manipulation while prosody stays flat](results/formant_sweep.png)
+
+Sweeping formant scaling from 1.0 (undisguised) → 0.65 (extreme), holding pitch
+roughly constant:
 
 | formant ratio | ECAPA rank-1 | GhostPrint rank-1 | ECAPA EER | GhostPrint EER |
 |---|---|---|---|---|
